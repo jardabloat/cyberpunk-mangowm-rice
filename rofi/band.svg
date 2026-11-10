@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ff003c" stop-opacity="0.45"/>
+      <stop offset="60%"  stop-color="#ff003c" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff003c" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  <polygon points="90,0 1000,0 1000,1000 0,1000 0,90" fill="url(#fade)"/>
+  <line x1="90" y1="0" x2="1000" y2="0" stroke="#ff003c" stroke-width="3" stroke-opacity="0.8"/>
+</svg>
