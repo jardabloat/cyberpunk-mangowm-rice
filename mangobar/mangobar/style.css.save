@@ -1,0 +1,164 @@
+/* =========================================================
+ * mangobar style (only modules/properties this bar supports)
+ *
+ * Modules: bar / tags / layout / title / overview /
+ *          clock / cpu / mem / brightness / volume /
+ *          network / keymode / keyboardlayout / tray / custom-<name>
+ * Tag states: tags.active / tags.occupied / tags.urgent / tags.empty
+ * Network states: network.connected / network.disconnected /
+ *                 network.wifi / network.ethernet
+ * Properties: color / background / padding / margin / border-radius /
+ *             min-width / font-family / font-size / font-weight
+ * ========================================================= */
+
+/* ==================== Font ==================== */
+/* font-family / font-size / font-weight. */
+* {
+    font-family: "Maple Mono NF CN";
+    font-size: 20px;
+    font-weight: bold;
+}
+* {
+    color: #ebdbb2;
+    background-color: transparent;
+    padding: 0px 10px;
+    margin: 5px 1px;
+    border-style: solid;
+    border-image-source: url("inactive.svg");
+}
+
+#bar {
+    background: none;
+    margin: 5px 10px;
+}
+
+#bar.sel {
+    background: none;
+}
+
+#tags {
+    padding: 0px 13px;
+    margin: 0px 2px;
+}
+
+#tags.active {
+    background-color: #FF0053;
+    color: #1b1a1a;
+}
+#tags.occupied {
+    background-color: #504945;
+    color: #ebdbb2;
+}
+#tags.urgent {
+    background-color: #fb4934;
+    color: #1b1a1a;
+}
+#tags.empty {
+    background-color: #201b14;
+    color: #ebdbb2;
+}
+
+/* Overview mode */
+#overview {
+    background-color: #83a598;
+    color: #1b1a1a;
+}
+
+/* Layout symbol */
+#layout {
+    padding: 0px 12px;
+    background-color: #bd788a;
+    color: #111111;
+    min-width: 34px;
+    margin: 5px 5px;
+}
+
+/* Window title */
+#title {
+    background-color: #bd788a;
+    color: #111111;
+}
+
+/* Right-side system modules */
+#clock {
+    background-color: #c4b595;
+    color: #1b1a1a;
+}
+/* Date module (clock#date), separate from time */
+#clock.date {
+    background-color: #b8bb26;
+    color: #1b1a1a;
+}
+#cpu {
+    padding: 0px 15px;
+    background-color: #c4b595;
+    color: #1b1a1a;
+}
+#mem {
+    background-color: #83a598;
+    color: #1b1a1a;
+}
+#brightness {
+    background-color: #FF0053;
+    color: #020224;
+}
+#volume {
+    background-color: #FF0053;
+    color: #020224;
+}
+#network {
+    background-color: #FF0053;
+    color: #020224;
+}
+#network.disconnected {
+    background-color: #FF0053;
+    color: #020224;
+}
+#battery {
+    background-color: #FF0053;
+    color: #020224;
+}
+#keymode {
+    background-color: #FF0053;
+    color: #020224;
+}
+#keyboardlayout {
+    background-color: #bd788a;
+    color: #1b1a1a;
+}
+
+/* Custom modules use #custom-<name> (e.g. custom/power -> #custom-power) */
+#custom-power {
+    background-color: transparent;
+
+    border-style: solid;
+    border-image-source: url("inactive.svg");
+    border-image-slice: 6 20 6 20 fill;
+    border-width: 6px 20px 6px 20px;
+    border-image-repeat: stretch;
+    border-radius: 0px;
+
+    padding: 0px 4px;
+    margin: 4px 6px;
+
+    color: #ff003c;
+}
+
+#tray {
+    background-color: #FF0053;
+    padding: 0px 15px;
+}
+
+menu {
+    background-color: #FF0053;
+    border-color: #ebdbb2;
+    border-radius: 10px;
+    font-size: 14px;
+}
+menuitem {
+    color: #ebdbb2;
+}
+menuitem:hover {
+    color: #1b1a1a;
+    background-color: #b8bb26;
+}

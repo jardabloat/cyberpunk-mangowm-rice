@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="36" viewBox="0 0 120 36">
+  <!-- Ombre décalée -->
+  <polygon points="5,5 104,5 119,20 119,35 20,35 5,20" fill="rgba(5, 2, 15, 0.85)" />
+
+  <!-- Fond plein rouge Cyberpunk -->
+  <polygon points="2,3 101,3 116,18 116,33 17,33 2,18" fill="#ff003c" stroke="#ff003c" stroke-width="1" />
+  
+  <!-- Accents cyan -->
+  <polygon points="50,0 88,0 91,3 47,3" fill="#00f0ff" />
+  <polygon points="29,33 67,33 70,36 32,36" fill="#00f0ff" />
+</svg>

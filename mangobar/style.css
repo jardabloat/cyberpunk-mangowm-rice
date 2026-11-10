@@ -1,0 +1,198 @@
+/* =========================================================
+ * mangobar style (only modules/properties this bar supports)
+ *
+ * Modules: bar / tags / layout / title / overview /
+ *          clock / cpu / mem / brightness / volume /
+ *          network / keymode / keyboardlayout / tray / custom-<name>
+ * Tag states: tags.active / tags.occupied / tags.urgent / tags.empty
+ * Network states: network.connected / network.disconnected /
+ *                 network.wifi / network.ethernet
+ * Properties: color / background / padding / margin / border-radius /
+ *             min-width / font-family / font-size / font-weight
+ * ========================================================= */
+
+/* ==================== Font ==================== */
+/* font-family / font-size / font-weight. */
+ {
+    font-family: "Rajdhani";
+    font-size: 24px;
+    font-weight: bold;
+}
+/* {
+    color: #ebdbb2;
+    background-color: transparent;
+    padding: 0px 10px;
+    margin: 5px 1px;
+    border-style: solid;
+    border-image-source: url("inactive.svg");
+}*/
+
+#bar {
+    background: none;
+    margin: 5px 10px;
+}
+
+#bar.sel {
+    background: none;
+}
+
+#tags {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+
+#tags.active {
+    color: #0b0514;
+    background-color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#tags.occupied {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#tags.urgent {
+    color: #0b0514;
+    background-color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#tags.empty {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+
+/* Overview mode */
+#overview {
+    background-color: #120624;
+    color: #ff003c;
+}
+
+/* Layout symbol */
+#layout {
+    background-color: #00f0ff;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+
+/* Window title */
+#title {
+    background-color: #bd788a;
+    color: #111111;
+}
+
+/* Right-side system modules */
+#clock {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+/* Date module (clock#date), separate from time */
+#clock.date {
+    color: #0b0514;
+    background-color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#cpu {
+    padding: 0px 15px;
+    background-color: #c4b595;
+    color: #1b1a1a;
+}
+#mem {
+    background-color: #83a598;
+    color: #1b1a1a;
+}
+#brightness {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#volume {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#network {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#network.disconnected {
+    color: #0b0514;
+    background-color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#battery {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+#keymode {
+    background-color: #FF0053;
+    color: #020224;
+}
+#keyboardlayout {
+    background-color: #bd788a;
+    color: #1b1a1a;
+}
+
+/* Custom modules use #custom-<name> (e.g. custom/power -> #custom-power) */
+#custom-power {
+    background-color: #120624;
+    color: #ff003c;
+    border-radius: 8px;
+    padding: 0px 14px;
+    margin: 5px 6px;
+}
+
+#custom-notification {
+    background-color: #120624;
+}
+
+#tray {
+    background-color: #00f0ff;
+    padding: 0px 15px;
+}
+
+menu {
+    background-color: #FF0053;
+    border-color: #ebdbb2;
+    border-radius: 10px;
+    font-size: 14px;
+}
+menuitem {
+    color: #ebdbb2;
+}
+menuitem:hover {
+    color: #0b0514;
+    background-color: #ff003c;
+    border-radius: 10px;
+    font-size: 14px;
+}
