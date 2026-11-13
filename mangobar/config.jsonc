@@ -62,7 +62,7 @@
         // "interval": 1  // seconds; omit to use the global "sys-interval"
     },
     "hideclients": {
-        "format": " {}"
+        "format": "   {}  "
     },
     "cpu": {
         "format": " {load}%",
