@@ -80,6 +80,11 @@
 }
 
 /* Layout symbol */
+#hideclients {
+    background-color: #120624
+    color: #ff003c
+}
+
 #layout {
     background-color: #00f0ff;
     color: #ff003c;
